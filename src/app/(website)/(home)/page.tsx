@@ -91,13 +91,13 @@ export default function Home() {
 
   return (
     <div>
-      <div className="h-screen grid grid-cols-5 mx-20 items-center leading-[5.5px] z-10">
+      <div className="h-screen grid grid-cols-1 lg:grid-cols-5 mx-20 items-center leading-[5.5px] z-10">
         <div className="col-span-3">
           <motion.div
             initial={{ clipPath: "inset(0% 50% 0% 50%)" }}
             animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-gray-800 md:text-[50px] mb-1.5 text-sm flex font-bold"
+            className="text-gray-800 md:text-[50px] mb-1.5 text-2xl flex font-bold"
           >
             像 Nova 一樣，在無限的創意裡誕生，然後毫不猶豫地按下 Init。
           </motion.div>

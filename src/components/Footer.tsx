@@ -29,21 +29,21 @@ export default function Footer() {
             </div>
           </div> */}
 
-          {/* <div className="flex flex-col md:flex-row md:space-x-12 justify-center mb-6 md:mb-0">
+          <div className="flex flex-col md:flex-row md:space-x-12 justify-center mb-6 md:mb-0">
             <div className="mb-6 md:mb-0">
               <h3 className="font-bold text-lg mb-3">聯絡我們</h3>
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://kaobar.dreamland-studio.org"
+                    href="mailto:official@novainit.studio"
                     className="hover:text-gray-600 transition duration-150"
                   >
-                    電子郵件: official@dreamland-studio.org
+                    電子郵件: official@novainit.studio
                   </a>
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="border-t border-gray-200 py-6 flex flex-col md:flex-row justify-between items-center">
