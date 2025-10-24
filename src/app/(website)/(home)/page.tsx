@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import logo from "@/assets/Black.png";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -7,8 +6,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import Particles from "@/components/background/Particles";
-import Link from "next/link";
 import Cubes from "@/components/Cubes";
+
+import Image from "next/image";
+import Link from "next/link";
 
 // 註冊 ScrollTrigger 插件
 if (typeof window !== "undefined") {
@@ -20,32 +21,37 @@ const services = [
     title: "會考霸｜Kaobar",
     description: "一個整合會考資源、提供會考線上社群的免費資源整合平台，讓會考生再準備會考時事半功倍！",
     link: "https://kaobar.dreamland-studio.org",
-    banner: "kaobar.png"
+    banner: "kaobar.png",
+    id: "kaobar"
   },
   {
     title: "OUTBOX",
     description:
       "這是一個所有人都能參加的創意競賽，你能使用AI以及你那創意的大腦發揮創意，創造、生成出一個作品並投稿上來，讓我們大家都看看！",
     link: "https://outbox.tw",
-    banner: "outbox.png"
+    banner: "outbox.png",
+    id: "outbox"
   },
   {
     title: "築夢之地工作室 — 官網",
     description: "以學生發展為核心，推動、協助教育為導向的社群組織",
     link: "https://dreamland-studio.org",
-    banner: "dreamland-studio.png"
+    banner: "dreamland-studio.png",
+    id: "dreamland-studio"
   },
   {
     title: "Securibit — 跨平台2FA驗證 APP",
     description: "一個跨平台皆可使用的2AF APP",
     link: "#",
-    banner: "Securibit.png"
+    banner: "Securibit.png",
+    id: "securibit"
   },
   {
     title: "PLAYOFFS — 臺灣 Minecraft 速通競賽官網",
     description: "這是一個由臺灣Minecrft玩家所發起的速通競賽，透過宣傳、引導的方式帶領臺灣Minecraft速通",
     link: "https://playoffs.pages.dev/",
-    banner: "playoffs.png"
+    banner: "playoffs.png",
+    id: "playoffs"
   }
 
 ];
@@ -141,7 +147,7 @@ export default function Home() {
               >
                 <Link
                   className="bg-white rounded-lg p-4 flex-1 flex flex-col group cursor-pointer h-full"
-                  href={service.link}
+                  href={"/projects/" + service.id}
                 >
                   <Image
                     src={"/projects/" + service.banner}

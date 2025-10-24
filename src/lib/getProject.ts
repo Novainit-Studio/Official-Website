@@ -2,11 +2,11 @@ interface ProjectData {
     name: string;
     description: string;
     banner: string;
-    director: string;
     client: string;
-    status: 0 | 1 | 2 | 3; // 0 = 已停止, 1 = 長期營運中, 2 = 籌備中, 3 = 進行中
+    status: 0 | 1 | 2 | 3; // 0 = 已停止, 1 = 長期營運中, 2 = 已結案
+    id: string;
     link?: string;
-    start_at: string;
+
 }
 
 const Projects: Record<string, ProjectData> = {
@@ -14,31 +14,94 @@ const Projects: Record<string, ProjectData> = {
         name: "會考霸｜KaoBar",
         description: "一個整合會考資源、提供會考線上社群的免費資源整合平台，讓會考生再準備會考時事半功倍！",
         banner: "kaobar.png",
-        director: "糖豆魚",
         client: "築夢之地工作室",
         link: "https://kaobar.dreamland-studio.org/",
-        status: 1,
-        start_at: "2025-01-31",
-    },
-    "gsatbar": {
-        name: "學測霸｜GSATBar",
-        description: "",
-        banner: "gsatbar.png",
-        director: "咖喱 Ryan",
-        client: "築夢之地工作室",
-        status: 2,
-        start_at: "2025-07-02",
+        id: "kaobar",
+        status: 1
     },
     "outbox": {
         name: "OUTBOX｜夢想創造競賽",
         description: "這是一個所有人都能參加的創意競賽，你能使用AI以及你那創意的大腦發揮創意，創造、生成出一個作品並投稿上來，讓我們大家都看看！",
         banner: "outbox.png",
-        director: "糖豆魚",
         client: "學生平台專案",
         link: "https://outbox.tw/",
-        status: 3,
-        start_at: "2025-09-29",
+        id: "outbox",
+        status: 1
     },
+    "playoffs": {
+        name: "PLAYOFFS — 臺灣 Minecraft 速通競賽官網",
+        description: "這是一個由臺灣Minecrft玩家所發起的速通競賽，透過宣傳、引導的方式帶領臺灣Minecraft速通",
+        banner: "playoffs.png",
+        client: "學生平台專案",
+        link: "https://playoffs.pages.dev/",
+        id: "playoffs",
+        status: 1
+    },
+    "dreamland-studio": {
+        name: "築夢之地工作室 — 官網",
+        description: "以學生發展為核心，推動、協助教育為導向的社群組織",
+        banner: "dreamland-studio.png",
+        client: "學生平台專案",
+        link: "https://dreamland-studio.org",
+        id: "dreamland-studio",
+        status: 2
+    },
+    "cap_profound": {
+        name: "115國中會考模擬考—成績查詢系統",
+        description: "以學生發展為核心，推動、協助教育為導向的社群組織",
+        banner: "capprofound.png",
+        client: "學生平台專案",
+        link: "https://capprofound.novainit.studio/",
+        id: "cap_profound",
+        status: 2
+    },
+    "securibit": {
+        name: "Securibit — 跨平台2FA驗證 APP",
+        description: "一個跨平台皆可使用的2AF APP",
+        banner: "Securibit.png",
+        client: "學生平台專案",
+        link: "#",
+        id: "securibit",
+        status: 0
+    },
+    "dgs": {
+        name: "DGS — Discord 機器人前代官網",
+        description: "一款擁有豐富功能整合，不論是趣味、管理、休閒甚至是促進社群活躍度相關功能都應有盡有的Discord 機器人",
+        banner: "dgs.png",
+        client: "學生平台專案",
+        link: "https://dgs-website.vercel.app/",
+        id: "dgs",
+        status: 2
+    },
+    "sunary": {
+        name: "（已下架）Sunary 臺灣加密貨幣聯盟官方網站",
+        description: "",
+        banner: "sunary.png",
+        client: "學生平台專案",
+        link: "#",
+        id: "sunary",
+        status: 2
+    },
+    "rhytem": {
+        name: "（已停止服務）Discord 音樂機器人官網",
+        description: "專注於Discord音樂功能的機器人官方網站",
+        banner: "rhytem.png",
+        client: "學生平台專案",
+        link: "#",
+        id: "rhytem",
+        status: 2
+    }
+    ,
+    "kgame": {
+        name: "（已停止開發）KGame Box",
+        description: "集成所有線上遊戲，類Steam但輕量且離線的遊戲入口軟體",
+        banner: "kgamebox.png",
+        client: "學生平台專案",
+        link: "#",
+        id: "kgame",
+        status: 0
+    }
+    
 };
 
 
