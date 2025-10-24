@@ -32,19 +32,19 @@ const services = [
   {
     title: "築夢之地工作室 — 官網",
     description: "以學生發展為核心，推動、協助教育為導向的社群組織",
-    link: "https://kaobar.dreamland-studio.org",
+    link: "https://dreamland-studio.org",
     banner: "dreamland-studio.png"
   },
   {
     title: "Securibit — 跨平台2FA驗證 APP",
     description: "一個跨平台皆可使用的2AF APP",
-    link: "https://kaobar.dreamland-studio.org",
+    link: "#",
     banner: "Securibit.png"
   },
   {
     title: "PLAYOFFS — 臺灣 Minecraft 速通競賽官網",
     description: "這是一個由臺灣Minecrft玩家所發起的速通競賽，透過宣傳、引導的方式帶領臺灣Minecraft速通",
-    link: "https://kaobar.dreamland-studio.org",
+    link: "https://playoffs.pages.dev/",
     banner: "playoffs.png"
   }
 
