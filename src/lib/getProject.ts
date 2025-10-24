@@ -28,6 +28,15 @@ const Projects: Record<string, ProjectData> = {
         id: "outbox",
         status: 1
     },
+    "dataspare": {
+        name: "Dataspare — 專業託管官網",
+        description: "由三間專業的託管資訊公司合作組成，提供完善完整的託管體使用驗",
+        banner: "dataspare.png",
+        client: "學生平台專案",
+        link: "https://datasphere.studio/",
+        id: "dataspare",
+        status: 1
+    },
     "playoffs": {
         name: "PLAYOFFS — 臺灣 Minecraft 速通競賽官網",
         description: "這是一個由臺灣Minecrft玩家所發起的速通競賽，透過宣傳、引導的方式帶領臺灣Minecraft速通",
@@ -90,8 +99,7 @@ const Projects: Record<string, ProjectData> = {
         link: "#",
         id: "rhytem",
         status: 2
-    }
-    ,
+    },
     "kgame": {
         name: "（已停止開發）KGame Box",
         description: "集成所有線上遊戲，類Steam但輕量且離線的遊戲入口軟體",

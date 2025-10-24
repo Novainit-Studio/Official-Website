@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center mt-1 mb-40">
       <div className="mt-20 text-[40px] text-black">我們的作品集</div>
-      <div className="grid grid-cols-3 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
         {data.map((e, index) => (
           <div key={index} className="min-w-[450px] max-w-[450px] cursor-target">
             <a

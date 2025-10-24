@@ -40,11 +40,11 @@ const services = [
     id: "dreamland-studio"
   },
   {
-    title: "Securibit — 跨平台2FA驗證 APP",
-    description: "一個跨平台皆可使用的2AF APP",
+    title: "Dataspare — 專業託管官網",
+    description: "由三間專業的託管資訊公司合作組成，提供完善完整的託管體使用驗",
     link: "#",
-    banner: "Securibit.png",
-    id: "securibit"
+    banner: "dataspare.png",
+    id: "dataspare"
   },
   {
     title: "PLAYOFFS — 臺灣 Minecraft 速通競賽官網",

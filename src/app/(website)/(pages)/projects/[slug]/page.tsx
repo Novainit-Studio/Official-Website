@@ -27,7 +27,7 @@ export default async function ProjectPage({
                             <div className="tracking-[2px] text-[18px] font-[300]">{data?.status === 0
                                 ? "已停止"
                                 : data?.status === 1
-                                    ? "長期營運中"
+                                    ? "長期維護中"
                                     : data?.status === 2
                                         ? "已結案"
                                             : "未知狀態"}</div>
